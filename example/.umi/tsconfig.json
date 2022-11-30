@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "baseUrl": "../",
+    "strict": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": [
+        "*"
+      ],
+      "@@/*": [
+        ".umi/*"
+      ],
+      "umi": [
+        "/Users/liuxuheng/OwnDevWorkspaces/umi-plugin-git/node_modules/.pnpm/umi@4.0.33_hi5qzyic2q3k32tmflpqu47fo4/node_modules/umi"
+      ],
+      "umi/typings": [
+        ".umi/typings"
+      ]
+    }
+  },
+  "include": [
+    "../.umirc.ts",
+    "../**/*.d.ts",
+    "../**/*.ts",
+    "../**/*.tsx"
+  ]
+}
