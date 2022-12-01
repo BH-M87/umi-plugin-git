@@ -3,7 +3,7 @@ import { execSync } from 'node:child_process';
 
 export default async function(api: IApi) {
   api.logger.info('use git plugin');
-  const gitLogBuffer = execSync('git log');
+  const gitLogBuffer = execSync('git log', { maxBuffer: 100 * 1024 * 1024 }); // 100MB, use default 200KB will throw error, 10000 commit's size is around 4MB
   const gitLog = gitLogBuffer.toString();
   const latestCommitLine = gitLog.split('\n')[0];
   const latestCommitHash = latestCommitLine.split(' ')[1];
