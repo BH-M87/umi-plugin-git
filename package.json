@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "description": "A umi plugin to add the git branch and commit hash meta info into index.html during every build",
   "authors": {
@@ -9,7 +9,7 @@
   },
   "repository": "/umi-plugin-git",
   "scripts": {
-    "build:start":"npm run build && npm run start",
+    "build:start": "npm run build && npm run start",
     "start": "cross-env APP_ROOT=example umi dev",
     "build": "father-build",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
