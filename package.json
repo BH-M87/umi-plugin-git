@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-git",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "description": "A umi plugin to add the git branch and commit hash meta info into index.html during every build",
   "authors": {
